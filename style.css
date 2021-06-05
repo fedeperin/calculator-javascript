@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #3B4664;
+}
+
+.calculator {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.397);
+    border-radius: 5px;
+}
+
+.calculator input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.calculator .keyboard {
+    margin-top: 20px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.calculator .keyboard button {
+    padding: 5px;
+    outline: none;
+    border: none;
+    background: #E9E3DC;
+    color: #2D3031;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 20px;
+    transition: all .5s ease;
+}
+
+.calculator .keyboard button:hover {
+    opacity: 0.7;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.calculator .keyboard button.bg-red {
+    background: #D13F2F;
+    color: #CED7DD;
+}
+
+.calculator .keyboard button.bg-blue {
+    background: #647296;
+    color: #CED7DD;
+}
+
+.touched {
+    position: fixed;
+    font-size: 50px;
+    color: #fff;
+    text-shadow:  0 0 10px #000;
+    pointer-events: none;
+    opacity: 0;
+	animation-name: touched;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes touched {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }    
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }    
+}
