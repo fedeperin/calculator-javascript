@@ -1,2 +1,4 @@
-# calculator-javascript
-A JavaScript simple calculator
+# Calculator Javascript
+A JavaScript simple calculator <br>
+
+https://fedeperin.github.io/calculator-javascript/
