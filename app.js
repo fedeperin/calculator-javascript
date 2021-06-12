@@ -37,7 +37,7 @@ reset.addEventListener('click', () => {
     lastResult = ''
 })
 equal.addEventListener('click', () => {
-    if(eval(input.value)) {
+    if(eval(input.value) != undefined) {
         lastResult = eval(input.value)
         input.value = input.value + ' = ' + lastResult
     }
