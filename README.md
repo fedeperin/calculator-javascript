@@ -1,4 +1,4 @@
-# Simple JS Calculator
+# Simple JavaScript Calculator
 An HTML, CSS and Vanilla JavaScript simple calculator. <br>
 
 Demo: https://fedeperin.github.io/calculator-javascript/
