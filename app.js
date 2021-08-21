@@ -32,12 +32,14 @@ del.addEventListener('click', () => {
     input.value = input.value.substr(-input.value.length, input.value.length - 1)
     lastResult = ''
 })
+
 reset.addEventListener('click', () => {
     input.value = ''
     lastResult = ''
 })
+
 equal.addEventListener('click', () => {
-    if(eval(input.value) != undefined) {
+    if(input.value != undefined) {
         lastResult = eval(input.value)
         input.value = input.value + ' = ' + lastResult
     }
